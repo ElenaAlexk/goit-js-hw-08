@@ -34,6 +34,7 @@ function onFormSubmit(event) {
   localStorage.getItem(STORAGE_KEY);
   event.currentTarget.reset();
   localStorage.removeItem(STORAGE_KEY);
+  formData = {};
 }
 
 //Получаем значение поля, сохраняем в хранилище
