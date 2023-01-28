@@ -56,7 +56,7 @@ function populateForm() {
   if (formValues) {
     formData = JSON.parse(formValues);
     console.log(formData);
-    refs.input.value = formData.email;
-    refs.textarea.value = formData.message;
+    refs.input.value = formData.email || '';
+    refs.textarea.value = formData.message || '';
   }
 }
